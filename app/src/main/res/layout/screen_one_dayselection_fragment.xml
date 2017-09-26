@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/training_days"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/yelloback"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Training Days"
+            android:textSize="20dp" />
+        <!--<LinearLayout
+            android:id="@+id/training_days"
+            android:layout_width="200dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/yelloback"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Training Days"
+                android:textSize="25dp" />
+        </LinearLayout>-->
+        <!--  <LinearLayout
+              android:id="@+id/nontraining_days"
+              android:layout_marginTop="20dp"
+              android:layout_width="200dp"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:layout_weight="1"
+              android:background="@drawable/yelloback"
+              android:gravity="center"
+              android:layout_marginBottom="50dp"
+              >-->
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/nontraining_days"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/yelloback"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Non-Training Days"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/day_goal"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/yelloback"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Day Goal"
+            android:textSize="20dp" />
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/screen_three_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_dark"
+                android:text="Email"
+                android:textAllCaps="false"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/screen_three_print"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_dark"
+                android:text="Print"
+                android:textAllCaps="false"
+                android:textSize="20dp" />
+        </LinearLayout>-->
+    </LinearLayout>
+
+</ScrollView>
+    <!--</LinearLayout>-->
+</LinearLayout>

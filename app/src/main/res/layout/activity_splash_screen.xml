@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_gravity="center"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/splashscreenbackground"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.MyNutritionApplication.mynutrition.Activity.SplashScreen">
+
+   <!-- <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Hello World!" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+-->
+    <ImageView
+        android:id="@+id/splashImg"
+        android:layout_marginTop="70dp"
+        android:padding="50dp"
+        android:elevation="10dp"
+        android:src="@mipmap/mynutritionlogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

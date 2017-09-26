@@ -1,0 +1,1934 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDF4C0">
+
+                    <TextView
+                        android:layout_weight="10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="Day Goal"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+
+                        />
+                    <ImageView
+                        android:id="@+id/btn_daygoal"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/edit"
+                        android:padding="7dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="viewStart"
+                            android:text="Protein"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:baselineAligned="false"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/protein_daygoal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+                                android:text="0000"
+                                android:textSize="20dp" />
+
+
+                            <!--                            <EditText
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_gravity="center"
+                                                            android:gravity="center"
+                                                            android:text="" />-->
+
+                            <EditText
+
+                                android:id="@+id/protein_edit_daygoal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="20dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Carbs"
+                            android:textAlignment="viewStart"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/carbs_daygoal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+                                android:text="0000"
+                                android:textSize="20dp" />
+                            <!--
+
+                                                        <EditText
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_gravity="center"
+                                                            android:gravity="center"
+                                                            android:text="" />
+                            -->
+
+
+                            <EditText
+                                android:id="@+id/carbs_edit_daygoal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="viewStart"
+                            android:text="Fats"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fats_daygoal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+                                android:text="0000"
+                                android:textSize="20dp" />
+
+                            <!--
+
+                                                        <EditText
+                                                            android:layout_width="0dp"
+                                                            android:layout_height="match_parent"
+                                                            android:layout_gravity="center"
+                                                            android:gravity="center"
+                                                            android:text="" />
+                            -->
+
+
+                            <EditText
+                                android:id="@+id/fats_edit_daygoal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+                            <TextView
+                                android:paddingLeft="30dp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textAlignment="viewStart"
+                                android:text="Calories"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/calaries_daygoal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+                                android:text="0000"
+                                android:textSize="20dp" />
+
+
+                            <!-- <EditText
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:text="" />-->
+                            <EditText
+                                android:id="@+id/calaries_edit_daygoal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                  />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="kcal"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDF4C0">
+
+                    <TextView
+                        android:layout_weight="10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="Meal 1"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+
+                        />
+                    <ImageView
+                        android:id="@+id/btn_meal1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/edit"
+                        android:padding="7dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="viewStart"
+                            android:text="Protein"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/protein_meal1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+                                android:text="0000"
+                                android:textSize="20dp" />
+
+
+
+                            <!--<EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="" />-->
+
+                            <EditText
+                                android:id="@+id/protein_edit_meal1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Carbs"
+                            android:textAlignment="viewStart"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/carbs_meal1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+
+                                android:text="0000"
+                                android:textSize="20dp" />
+
+
+                            <!--  <EditText
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:text="" />-->
+
+                            <EditText
+                                android:id="@+id/carbs_edit_meal1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="viewStart"
+                            android:text="Fats"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fats_meal1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="0000"
+                                android:maxLength="6"
+                                android:textSize="20dp" />
+
+
+                            <!--   <EditText
+                                   android:layout_width="0dp"
+                                   android:layout_height="match_parent"
+                                   android:layout_gravity="center"
+                                   android:gravity="center"
+                                   android:text="" />-->
+                            <EditText
+                                android:id="@+id/fats_edit_meal1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+                            <TextView
+                                android:paddingLeft="30dp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textAlignment="viewStart"
+                                android:text="Calories"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/calaries_meal1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="0000"
+                                android:maxLength="6"
+                                android:textSize="20dp" />
+
+                            <!-- <EditText
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:text="" />-->
+
+
+                            <EditText
+                                android:id="@+id/calaries_edit_meal1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="kcal"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDF4C0">
+
+                    <TextView
+                        android:layout_weight="10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="Meal 2"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+
+                        />
+                    <ImageView
+                        android:id="@+id/btn_meal2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/edit"
+                        android:padding="7dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="viewStart"
+                            android:text="Protein"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/protein_meal2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="0000"
+                                android:maxLength="6"
+                                android:textSize="20dp" />
+
+
+
+                            <!--<EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="" />-->
+
+                            <EditText
+                                android:id="@+id/protein_edit_meal2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Carbs"
+                            android:textAlignment="viewStart"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/carbs_meal2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+                                android:text="0000"
+                                android:textSize="20dp" />
+
+
+                            <!-- <EditText
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:text="" />-->
+                            <EditText
+                                android:id="@+id/carbs_edit_meal2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="viewStart"
+                            android:text="Fats"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fats_meal2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+                                android:text="0000"
+                                android:textSize="20dp" />
+
+
+
+
+                            <!--  <EditText
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:text="" />-->
+                            <EditText
+                                android:id="@+id/fats_edit_meal2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+                            <TextView
+                                android:paddingLeft="30dp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textAlignment="viewStart"
+                                android:text="calaries"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/calaries_meal2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+                                android:text="0000"
+                                android:textSize="20dp" />
+                            <!--   <EditText
+                                   android:layout_width="0dp"
+                                   android:layout_height="match_parent"
+                                   android:layout_gravity="center"
+                                   android:gravity="center"
+                                   android:text="" />-->
+
+
+                            <EditText
+                                android:id="@+id/calaries_edit_meal2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="kcal"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDF4C0">
+
+                    <TextView
+                        android:layout_weight="10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="Meal 3"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+
+                        />
+                    <ImageView
+                        android:id="@+id/btn_meal3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/edit"
+                        android:padding="7dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="viewStart"
+                            android:text="Protein"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/protein_meal3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="0000"
+                                android:maxLength="6"
+                                android:textSize="20dp" />
+
+
+
+                            <!--  <EditText
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:text="" />-->
+
+                            <EditText
+                                android:id="@+id/protein_edit_meal3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                 />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Carbs"
+                            android:textAlignment="viewStart"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/carbs_meal3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="0000"
+                                android:maxLength="6"
+                                android:textSize="20dp" />
+
+
+                            <!--   <EditText
+                                   android:layout_width="0dp"
+                                   android:layout_height="match_parent"
+                                   android:layout_gravity="center"
+                                   android:gravity="center"
+                                   android:text="" />-->
+
+
+                            <EditText
+                                android:id="@+id/carbs_edit_meal3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="viewStart"
+                            android:text="Fats"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fats_meal3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+                                android:text="0000"
+                                android:textSize="20dp" />
+
+
+                            <!--  <EditText
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:text="" />-->
+
+                            <EditText
+                                android:id="@+id/fats_edit_meal3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+                            <TextView
+                                android:paddingLeft="30dp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textAlignment="viewStart"
+                                android:text="calaries"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/calaries_meal3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+                                android:text="0000"
+                                android:textSize="20dp" />
+
+                            <!-- <EditText
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:text="" />-->
+
+
+                            <EditText
+                                android:id="@+id/calaries_edit_meal3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="kcal"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDF4C0">
+
+                    <TextView
+                        android:layout_weight="10"
+                        android:id="@+id/Meal4_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="Pre Workout Meal"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+
+                        />
+                    <ImageView
+                        android:id="@+id/btn_meal4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/edit"
+                        android:padding="7dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="viewStart"
+                            android:text="Protein"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/protein_meal4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+                                android:text="0000"
+                                android:textSize="20dp" />
+
+
+                            <!--  <EditText
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:text="" />-->
+
+
+                            <EditText
+                                android:id="@+id/protein_edit_meal4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                 />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Carbs"
+                            android:textAlignment="viewStart"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/carbs_meal4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLength="6"
+                                android:text="0000"
+                                android:textSize="20dp" />
+
+                            <!--  <EditText
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:text="" />-->
+
+                            <EditText
+                                android:id="@+id/carbs_edit_meal4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="viewStart"
+                            android:text="Fats"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fats_meal4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="0000"
+                                android:maxLength="6"
+                                android:textSize="20dp" />
+
+                            <!--  <EditText
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:text="" />-->
+
+
+                            <EditText
+                                android:id="@+id/fats_edit_meal4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+                            <TextView
+                                android:paddingLeft="30dp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textAlignment="viewStart"
+                                android:text="calaries"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/calaries_meal4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="0000"
+                                android:maxLength="6"
+                                android:textSize="20dp" />
+                            <!--  <EditText
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:text="" />-->
+
+
+
+                            <EditText
+                                android:id="@+id/calaries_edit_meal4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="kcal"
+                                android:textSize="20dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:padding="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EDF4C0">
+
+                    <TextView
+                        android:layout_weight="10"
+                        android:id="@+id/Meal5_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:text="Post Workout Meal"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+
+                        />
+                    <ImageView
+                        android:id="@+id/btn_meal5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/edit"
+                        android:padding="7dp"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="10dp"
+                    android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="viewStart"
+                            android:text="Protein"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/protein_meal5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="0000"
+                                android:maxLength="6"
+                                android:textSize="20dp" />
+                            <!--  <EditText
+                                  android:layout_width="0dp"
+                                  android:layout_height="match_parent"
+                                  android:layout_gravity="center"
+                                  android:gravity="center"
+                                  android:text="" />-->
+
+
+
+                            <EditText
+                                android:id="@+id/protein_edit_meal5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Carbs"
+                            android:textAlignment="viewStart"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/carbs_meal5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="0000"
+                                android:maxLength="6"
+                                android:textSize="20dp" />
+
+                            <!-- <EditText
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:text="" />-->
+
+
+                            <EditText
+                                android:id="@+id/carbs_edit_meal5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:paddingLeft="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textAlignment="viewStart"
+                            android:text="Fats"
+                            android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fats_meal5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="0000"
+                                android:maxLength="6"
+                                android:textSize="20dp" />
+
+
+                            <!-- <EditText
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:text="" />
+ -->
+
+                            <EditText
+                                android:id="@+id/fats_edit_meal5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="g"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_gravity="start"
+                            android:gravity="start"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+
+                            <TextView
+                                android:paddingLeft="30dp"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:textAlignment="viewStart"
+                                android:text="calaries"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginRight="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/calaries_meal5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="0000"
+                                android:maxLength="6"
+                                android:textSize="20dp" />
+
+
+                            <!-- <EditText
+                                 android:layout_width="0dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_gravity="center"
+                                 android:gravity="center"
+                                 android:text="" />-->
+                            <EditText
+                                android:id="@+id/calaries_edit_meal5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="bottom"
+                                android:maxLength="6"
+                                android:textSize="18dp"
+                                android:paddingBottom="6dp"
+                                android:textAlignment="viewStart"
+                                android:gravity="center_horizontal"
+                                android:inputType="numberDecimal"
+                                android:visibility="gone"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="kcal"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

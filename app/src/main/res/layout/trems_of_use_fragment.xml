@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="About"
+            android:textColor="#000000"
+            android:textSize="25dp"
+
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.uncopt.android.widget.text.justify.JustifiedTextView
+        android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:text="This meal creator app is a tool provided by My Nutrition 1.2.3.
+It is a tool intended for anyone who wants to build their own meal plan based on their own macronutrient and calorie needs during training and/or non-training days.
+It is also a tool to provide macronutrient and calorie information."
+            />
+        <com.uncopt.android.widget.text.justify.JustifiedTextView
+        android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:text="The macronutrient and calorie calculations are based upon generic nutritional information and may vary depending on the brand and quality of the food.
+All macronutrient and calorie information is based on uncooked weight unless specified.
+"
+            />
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
