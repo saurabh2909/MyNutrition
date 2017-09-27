@@ -20,6 +20,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,6 +54,7 @@ import com.project.MyNutritionApplication.mynutrition.Extra.Calculation_class;
 import com.project.MyNutritionApplication.mynutrition.Extra.FragmentStack;
 import com.project.MyNutritionApplication.mynutrition.R;
 import com.project.MyNutritionApplication.mynutrition.Webview;
+import com.project.MyNutritionApplication.mynutrition.Webview_thewwScreen;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -89,6 +91,10 @@ public class Screen_three_selectfood_fragment extends Fragment {
 
     LinearLayout MealTable;
 
+    Button print,mail;
+    StringBuilder food;
+    String food_str;
+    String day;
     ImageView image;
     LinearLayout screenthree_print_layout;
 
@@ -105,6 +111,10 @@ public class Screen_three_selectfood_fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.screen_three_select_food_fragment, container, false);
+
+
+        mail= (Button) view.findViewById(R.id.screen_three_email_one);
+        print= (Button) view.findViewById(R.id.screen_three_print_one);
 
         food1 = (LinearLayout) view.findViewById(R.id.food_1);
         food2 = (LinearLayout) view.findViewById(R.id.food_2);
@@ -137,6 +147,74 @@ public class Screen_three_selectfood_fragment extends Fragment {
         MealTable = (LinearLayout) view.findViewById(R.id.MealTable);
 
 
+        print.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentStack.getInstance().push(new Screen_three_selectfood_fragment());
+                fragmentTransaction.setCustomAnimations(R.anim.set_in_right, R.anim.set_left_out);
+                fragmentTransaction.replace(R.id.viewpager, new Webview_thewwScreen()).commit();
+            }
+        });
+
+
+        mail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                preferences = getContext().getSharedPreferences("foodSelection", Context.MODE_PRIVATE);
+
+
+                food = new StringBuilder();
+                NewDatabase_CreateTable database_settings = new NewDatabase_CreateTable(getContext());
+                Cursor c = database_settings.getMeal(preferences.getString("meal", ""), preferences.getString("day", ""));
+                c.moveToFirst();
+                if (c.moveToFirst()) {
+                    do {
+                        food.append("<tr><td>");
+                        food.append(c.getString(c.getColumnIndex(database_settings.MEAL_COL_FOOD_NAME)));
+                        food.append("</td><td>");
+                        food.append(c.getString(c.getColumnIndex(database_settings.MEAL_COL_GRAMS)));
+                        food.append("g</td></tr>");
+                    } while (c.moveToNext());
+                }
+
+                food_str = "<table border=\"0\">\n" +
+                        food +
+                        "</table>\n";
+
+                if (preferences.getString("day", "").equals("training"))
+                    day="Training Day";
+                else day="Non-Training Day";
+
+
+                final String data = "<html>\n" +
+                        "<body>\n" +
+                        "\t\n" +
+                        "\t<center>\n" +
+                        "\t<h1>" + day + "</h1>\n" +
+                        "\t<h1>" + preferences.getString("meal", "") + "</h1>\n" +
+                        "</center>\n" +
+                        food_str +
+                        "</body>\n" +
+                        "</html>";
+
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                String[] recipients = {"jindanikuldeep@gmail.com"};
+                String[] cc = {"mynutrition123@gmail.com"};
+                intent.putExtra(Intent.EXTRA_SUBJECT, "The Subject");
+                intent.putExtra(Intent.EXTRA_CC, cc);
+                intent.putExtra(Intent.EXTRA_EMAIL, recipients);
+                intent.putExtra(
+                        Intent.EXTRA_TEXT,
+                        Html.fromHtml(new StringBuilder()
+                                .append(data)
+//                                .append("<small><p>More content</p></small>")
+                                .toString())
+                );
+                intent.setType("text/html");
+                startActivity(Intent.createChooser(intent, "Send Mail"));
+
+            }
+        });
 
         final ImageView imageView = (ImageView) view.findViewById(R.id.image);
 
